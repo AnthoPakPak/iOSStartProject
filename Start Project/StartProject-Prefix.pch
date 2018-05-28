@@ -1,0 +1,40 @@
+//
+//  StartProject-Prefix.pch
+//  StartProject
+//
+//  Created by Anthonin Cocagne on 16/04/2018.
+//  Copyright © 2018 Anthonin Cocagne. All rights reserved.
+//
+
+#ifndef StartProject_Prefix_pch
+#define StartProject_Prefix_pch
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "AFNetworking.h"
+#import "Utils.h"
+#import "Constants.h"
+#import "URLs.h"
+#import "nsuserdefaults-macros.h"
+#import "NSString+Additions.h"
+#import <ChameleonFramework/Chameleon.h>
+#import "GHConsole.h"
+
+#import "LoggingConstants.h"
+#import "PhoneAndOsDetection.h"
+
+
+#define ShowAlert(title, myMessage)  { UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:myMessage preferredStyle:UIAlertControllerStyleAlert]; [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]]; [Utils showAlertControllerOverEverything:alertController]; }
+
+
+
+#pragma mark - NSDictionary
+
+//just for safety in when values are nil in NSDic
+#define ObjOrNSNull(obj) obj ? obj : [NSNull null]
+
+
+#endif /* StartProject_Prefix_pch */

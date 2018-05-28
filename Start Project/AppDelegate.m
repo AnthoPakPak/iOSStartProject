@@ -3,10 +3,16 @@
 //  Start Project
 //
 //  Created by Anthonin Cocagne on 23/05/2018.
-//  Copyright © 2018 Services Nomades. All rights reserved.
+//  Copyright © 2018 Anthonin Cocagne. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "AppDelegateHelper.h"
+
+#if DEBUG
+#import "FLEX.h"
+#endif
+
 
 @interface AppDelegate ()
 
@@ -17,6 +23,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+#if DEBUG
+    //debug engine
+    [[FLEXManager sharedManager] showExplorer];
+    [[GHConsole sharedConsole] startPrintLog];
+#endif
+    
+    //Monitor network status
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        DLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+    }];
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    //New version checker
+//    [AppDelegateHelper newVersionCheckerWithForceUpdate:YES];
+    
     return YES;
 }
 

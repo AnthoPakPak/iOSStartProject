@@ -3,7 +3,7 @@
 //  Start Project
 //
 //  Created by Anthonin Cocagne on 23/05/2018.
-//  Copyright © 2018 Services Nomades. All rights reserved.
+//  Copyright © 2018 Anthonin Cocagne. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor flatRedColor];
+    ShowAlert(@"Yes", @"Success !");
 }
 
 
