@@ -11,7 +11,7 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 - Supprimer le dossier `.git`
 <!-- - Changer la target dans le `Podfile` -->
 - Changer le bundle identifier
-- Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`)
+<!-- - Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`) -->
 - Enlever les trucs inutiles dans `AppDelegate.m`
 - `Pomme + B` pour vérifier qu'il n'y a pas d'erreurs
 
