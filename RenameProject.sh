@@ -38,10 +38,9 @@ if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 
 
 	echo -e "Next steps :
-	- Rdeux pod install
+	- Run pod install
 	- Remove .git folder
-	- (Optional) Add $2-MainFolder to your git repository
-	- (Optional) Copy this project's .gitignore file to your repository
+	- Enable Git through Xcode
 	- Open your fresh new $2.xcworkspace and you are done!"
 
 	read -p "Do you want me to run pod install for you ? (y/n) " -n 1 -r
