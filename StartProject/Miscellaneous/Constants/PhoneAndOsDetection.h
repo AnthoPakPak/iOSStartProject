@@ -1,6 +1,6 @@
 //
 //  PhoneAndOsDetection.h
-//  Start Project
+//  StartProject
 //
 //  Created by Anthonin Cocagne on 28/05/2018.
 //  Copyright © 2018 Anthonin Cocagne. All rights reserved.

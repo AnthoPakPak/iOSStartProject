@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  Start Project
+//  StartProject
 //
 //  Created by Anthonin Cocagne on 23/05/2018.
 //  Copyright © 2018 Anthonin Cocagne. All rights reserved.

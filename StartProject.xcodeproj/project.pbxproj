@@ -19,11 +19,10 @@
 		4EB19F4420B557CC00B986CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB19F4320B557CC00B986CC /* Assets.xcassets */; };
 		4EB19F4720B557CC00B986CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB19F4520B557CC00B986CC /* LaunchScreen.storyboard */; };
 		4EB19F4A20B557CC00B986CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB19F4920B557CC00B986CC /* main.m */; };
-		FA030673482A3FA26882B855 /* Pods_Start_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7F43DDEF5516D0C28AEFB5 /* Pods_Start_Project.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0CF93628FF0FBC9FEC6FF872 /* Pods-Start Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Start Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Start Project/Pods-Start Project.release.xcconfig"; sourceTree = "<group>"; };
+		0CF93628FF0FBC9FEC6FF872 /* Pods-StartProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-StartProject/Pods-StartProject.release.xcconfig"; sourceTree = "<group>"; };
 		4E33204920BC449D00870280 /* AppDelegateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateHelper.m; sourceTree = "<group>"; };
 		4E33204A20BC449D00870280 /* AppDelegateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateHelper.h; sourceTree = "<group>"; };
 		4E33205120BC465C00870280 /* NSJSONSerialization+ANDYJSONFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+ANDYJSONFile.h"; sourceTree = "<group>"; };
@@ -43,7 +42,7 @@
 		4E33206320BC484400870280 /* CALayer+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Additions.m"; sourceTree = "<group>"; };
 		4E33206420BC484400870280 /* NSString+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		4E33206820BC49CE00870280 /* PhoneAndOsDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneAndOsDetection.h; sourceTree = "<group>"; };
-		4EB19F3720B557C300B986CC /* Start Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Start Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB19F3720B557C300B986CC /* StartProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB19F3A20B557C300B986CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4EB19F3B20B557C300B986CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4EB19F3D20B557C300B986CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -54,7 +53,7 @@
 		4EB19F4820B557CC00B986CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB19F4920B557CC00B986CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A7F43DDEF5516D0C28AEFB5 /* Pods_Start_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Start_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D9C36098D356B5233010B76 /* Pods-Start Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Start Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Start Project/Pods-Start Project.debug.xcconfig"; sourceTree = "<group>"; };
+		8D9C36098D356B5233010B76 /* Pods-StartProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StartProject/Pods-StartProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA030673482A3FA26882B855 /* Pods_Start_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +70,8 @@
 		29535A812DF2D05F3A704B0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8D9C36098D356B5233010B76 /* Pods-Start Project.debug.xcconfig */,
-				0CF93628FF0FBC9FEC6FF872 /* Pods-Start Project.release.xcconfig */,
+				8D9C36098D356B5233010B76 /* Pods-StartProject.debug.xcconfig */,
+				0CF93628FF0FBC9FEC6FF872 /* Pods-StartProject.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -137,7 +135,7 @@
 		4EB19F2E20B557C300B986CC = {
 			isa = PBXGroup;
 			children = (
-				4EB19F3920B557C300B986CC /* Start Project */,
+				4EB19F3920B557C300B986CC /* StartProject */,
 				4EB19F3820B557C300B986CC /* Products */,
 				29535A812DF2D05F3A704B0F /* Pods */,
 				EDC7481E2C77215E2ACFED42 /* Frameworks */,
@@ -147,12 +145,12 @@
 		4EB19F3820B557C300B986CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EB19F3720B557C300B986CC /* Start Project.app */,
+				4EB19F3720B557C300B986CC /* StartProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4EB19F3920B557C300B986CC /* Start Project */ = {
+		4EB19F3920B557C300B986CC /* StartProject */ = {
 			isa = PBXGroup;
 			children = (
 				4EB19F4020B557C300B986CC /* Main.storyboard */,
@@ -168,7 +166,7 @@
 				4EB19F4820B557CC00B986CC /* Info.plist */,
 				4EB19F4920B557CC00B986CC /* main.m */,
 			);
-			path = "Start Project";
+			path = StartProject;
 			sourceTree = "<group>";
 		};
 		EDC7481E2C77215E2ACFED42 /* Frameworks */ = {
@@ -182,9 +180,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EB19F3620B557C300B986CC /* Start Project */ = {
+		4EB19F3620B557C300B986CC /* StartProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EB19F4D20B557CC00B986CC /* Build configuration list for PBXNativeTarget "Start Project" */;
+			buildConfigurationList = 4EB19F4D20B557CC00B986CC /* Build configuration list for PBXNativeTarget "StartProject" */;
 			buildPhases = (
 				2F9D02569ECA5ACBA4AF80D2 /* [CP] Check Pods Manifest.lock */,
 				4EB19F3320B557C300B986CC /* Sources */,
@@ -197,9 +195,9 @@
 			);
 			dependencies = (
 			);
-			name = "Start Project";
-			productName = "Start Project";
-			productReference = 4EB19F3720B557C300B986CC /* Start Project.app */;
+			name = StartProject;
+			productName = StartProject;
+			productReference = 4EB19F3720B557C300B986CC /* StartProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EB19F3220B557C300B986CC /* Build configuration list for PBXProject "Start Project" */;
+			buildConfigurationList = 4EB19F3220B557C300B986CC /* Build configuration list for PBXProject "StartProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EB19F3620B557C300B986CC /* Start Project */,
+				4EB19F3620B557C300B986CC /* StartProject */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +257,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Start Project-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StartProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -272,7 +270,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Start Project/Pods-Start Project-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-StartProject/Pods-StartProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
@@ -291,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Start Project/Pods-Start Project-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StartProject/Pods-StartProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2CABA5E491B497FD9EFC55C /* [CP] Copy Pods Resources */ = {
@@ -306,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Start Project/Pods-Start Project-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StartProject/Pods-StartProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -462,16 +460,19 @@
 		};
 		4EB19F4E20B557CC00B986CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D9C36098D356B5233010B76 /* Pods-Start Project.debug.xcconfig */;
+			baseConfigurationReference = 8D9C36098D356B5233010B76 /* Pods-StartProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34846GBRGG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/StartProject-Prefix.pch";
-				INFOPLIST_FILE = "Start Project/Info.plist";
+				INFOPLIST_FILE = StartProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.services.nomades.Start-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,16 +481,19 @@
 		};
 		4EB19F4F20B557CC00B986CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CF93628FF0FBC9FEC6FF872 /* Pods-Start Project.release.xcconfig */;
+			baseConfigurationReference = 0CF93628FF0FBC9FEC6FF872 /* Pods-StartProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34846GBRGG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/StartProject-Prefix.pch";
-				INFOPLIST_FILE = "Start Project/Info.plist";
+				INFOPLIST_FILE = StartProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.services.nomades.Start-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EB19F3220B557C300B986CC /* Build configuration list for PBXProject "Start Project" */ = {
+		4EB19F3220B557C300B986CC /* Build configuration list for PBXProject "StartProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB19F4B20B557CC00B986CC /* Debug */,
@@ -508,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EB19F4D20B557CC00B986CC /* Build configuration list for PBXNativeTarget "Start Project" */ = {
+		4EB19F4D20B557CC00B986CC /* Build configuration list for PBXNativeTarget "StartProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EB19F4E20B557CC00B986CC /* Debug */,
