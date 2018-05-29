@@ -5,12 +5,13 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 ## Pour chaque nouveau projet :
 
 - Checkout ce repo
-- Lancer `./RenameProject.sh "Start Project" NewProjectName` pour changer le nom du projet
-- Changer la target dans le `Podfile`
+- Commenter/Décommenter dans le `Podfile` les librairies nécessaires
+- Lancer `./RenameProject.sh "NewProjectName" NewProjectName` pour changer le nom du projet (`ack` doit être installé)
+- `pod install` si ce n'est pas déjà fait
+- Supprimer le dossier `.git`
+<!-- - Changer la target dans le `Podfile` -->
 - Changer le bundle identifier
 - Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`)
-- Commenter/Décommenter dans le `Podfile` les librairies nécessaires
-- `pod install`
 - Enlever les trucs inutiles dans `AppDelegate.m`
 - `Pomme + B` pour vérifier qu'il n'y a pas d'erreurs
 

@@ -1,7 +1,22 @@
 #!/bin/bash
 
-#ACK needs to be installed on the machine (brew install rename ack)
+#Script inspiré de https://stackoverflow.com/a/48004237/4894980
 
+#ACK needs to be installed on the machine (brew install rename ack)
+if ! hash ack 2>/dev/null; then
+	read -p "Ack and Rename program are not installed, do you want me to install it for you ? (y/n) " -n 1 -r
+	echo #new line
+
+	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+		brew install rename ack
+	else 
+		echo "Ack and Rename are required, aborting."
+		exit 0
+	fi
+fi
+
+
+#Program
 read -p "Do you really want to rename your project $1 to $2 ? (y/n) " -n 1 -r
 echo #new line
 
