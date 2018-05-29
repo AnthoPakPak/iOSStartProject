@@ -38,7 +38,8 @@ if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 
 
 	echo -e "Next steps :
-	- Run pod install
+	- Rdeux pod install
+	- Remove .git folder
 	- (Optional) Add $2-MainFolder to your git repository
 	- (Optional) Copy this project's .gitignore file to your repository
 	- Open your fresh new $2.xcworkspace and you are done!"
@@ -49,6 +50,11 @@ if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 		pod install
 	fi
 
+	read -p "Do you want me to delete .git folder for you ? (y/n) " -n 1 -r
+	echo #new line
+	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+		rm -rf .git
+	fi
 else 
 	echo "Cancel renaming."
 	exit 0
