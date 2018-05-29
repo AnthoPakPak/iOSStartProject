@@ -1,11 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'Start Project' do
+target 'StartProject' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Start Project
+  # Pods for StartProject
   pod 'AFNetworking'
   pod 'GHConsole'
   pod 'ChameleonFramework', :inhibit_warnings => true
