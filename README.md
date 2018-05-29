@@ -5,6 +5,7 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 ## Pour chaque nouveau projet :
 
 - Checkout ce repo
+- Lancer `./RenameProject.sh "Start Project" NewProjectName` pour changer le nom du projet
 - Changer la target dans le `Podfile`
 - Changer le bundle identifier
 - Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`)
