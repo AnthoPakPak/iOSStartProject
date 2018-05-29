@@ -9,12 +9,12 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 - Lancer `./RenameProject.sh StartProject NewProjectName` pour changer le nom du projet (`ack` et `rename` doivent être installés)
 - `pod install` si ce n'est pas déjà fait
 - Supprimer le dossier `.git` puis `Create Git Repositories` dans Xcode
-<!-- - Changer la target dans le `Podfile` -->
 - Changer le bundle identifier
-<!-- - Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`) -->
 - Enlever les trucs inutiles dans `AppDelegate.m`
 - `Pomme + B` pour vérifier qu'il n'y a pas d'erreurs
 
+<!-- - Changer la target dans le `Podfile` -->
+<!-- - Changer le nom du `.pch` + Dans Build Settings, mettre `Prefix Header` à la bonne valeur (`$(SRCROOT)/$(PROJECT_NAME)/PROJECTNAME-Prefix.pch`) -->
 
 ## Librairies :
 
