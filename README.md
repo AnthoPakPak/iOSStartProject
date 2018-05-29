@@ -6,7 +6,7 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 
 - Clone ce repo `git clone https://github.com/AnthoPakPak/iOSStartProject.git`
 - Commenter/Décommenter dans le `Podfile` les librairies nécessaires
-- Lancer `./RenameProject.sh "NewProjectName" NewProjectName` pour changer le nom du projet (`ack` doit être installé)
+- Lancer `./RenameProject.sh "Start Project" NewProjectName` pour changer le nom du projet (`ack` et `rename` doivent être installés)
 - `pod install` si ce n'est pas déjà fait
 - Supprimer le dossier `.git`
 <!-- - Changer la target dans le `Podfile` -->
