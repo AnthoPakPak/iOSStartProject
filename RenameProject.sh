@@ -49,6 +49,12 @@ if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 		rm -rf .git
 	fi
 	
+	read -p "Do you want to edit Podfile ? (y/n) " -n 1 -r
+	echo #new line
+	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+		vim Podfile
+	fi
+	
 	read -p "Do you want me to run pod install for you ? (y/n) " -n 1 -r
 	echo #new line
 	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
