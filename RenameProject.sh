@@ -43,17 +43,30 @@ if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 	- Enable Git through Xcode
 	- Open your fresh new $2.xcworkspace and you are done!"
 
-	read -p "Do you want me to run pod install for you ? (y/n) " -n 1 -r
-	echo #new line
-	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
-		pod install
-	fi
-
 	read -p "Do you want me to delete .git folder for you ? (y/n) " -n 1 -r
 	echo #new line
 	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
 		rm -rf .git
 	fi
+	
+	read -p "Do you want to edit Podfile ? (y/n) " -n 1 -r
+	echo #new line
+	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+		vim Podfile
+	fi
+	
+	read -p "Do you want me to run pod install for you ? (y/n) " -n 1 -r
+	echo #new line
+	if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+		pod install
+		
+		read -p "Do you want me to open $2.xcworkspace ? (y/n) " -n 1 -r
+		echo #new line
+		if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+			open $2.xcworkspace
+		fi
+	fi
+	
 else 
 	echo "Cancel renaming."
 	exit 0
