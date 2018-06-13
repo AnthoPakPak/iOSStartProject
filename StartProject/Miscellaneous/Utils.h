@@ -20,4 +20,6 @@
 +(NSDate*) getDateFromString:(NSString*)dateString;
 +(NSString*) getStringFromDate:(NSDate*)date;
 
++(int)getRandomNumberBetween:(int)from to:(int)to;
+
 @end
