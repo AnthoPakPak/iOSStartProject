@@ -43,3 +43,4 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 - [ZMJGanttChart](https://github.com/keshiim/ZMJGanttChart) : Affichage de tableaux "à la Excel"
 - [M13PDFKit](https://github.com/Marxon13/M13PDFKit) : Un viewer PDF (ajouter également `pod 'TTOpenInAppActivity' , '1.0'` au Podfile car sinon c'est bugué)
 - [ActionSheetPicker](https://github.com/skywinder/ActionSheetPicker-3.0) : Affichage d'un picker view pratique avec handler pour la réponse
+- [PopOverMenu](https://github.com/tichise/PopOverMenu) : Affichage d'un popover avec un table view et un completion handler
