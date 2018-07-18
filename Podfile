@@ -9,7 +9,8 @@ target 'StartProject' do
   pod 'AFNetworking'
   pod 'GHConsole'
   pod 'ChameleonFramework', :inhibit_warnings => true
-  
+  pod 'KVConstraintExtensionsMaster'
+
   
 #  pod 'IQKeyboardManager'
 #  pod 'SVProgressHUD'
