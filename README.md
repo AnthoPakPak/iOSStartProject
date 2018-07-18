@@ -26,6 +26,7 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 - [GHConsole](https://github.com/Liaoworking/GHConsole)
 - [MLeaksFinder](https://github.com/Tencent/MLeaksFinder)
 - [FBRetainCycleDetector](https://github.com/facebook/FBRetainCycleDetector)
+- [KVConstraintExtensionsMaster](https://github.com/keshavvishwkarma/KVConstraintExtensionsMaster)
 - [IQKeyboardManager](https://github.com/hackiftekhar/IQKeyboardManager) (à décommenter si nécessaire)
 - [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) (à décommenter si nécessaire)
 - [KLCPopup](https://github.com/jmascia/KLCPopup) (à décommenter si nécessaire)
