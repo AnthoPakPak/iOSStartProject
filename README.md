@@ -4,6 +4,40 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 
 ## Pour chaque nouveau projet :
 
+### Automatiquement :
+
+Lancer le script suivant et se laisser guider :
+
+```
+#!/bin/bash
+
+
+read -p "Do you really want to create a new project named $1 ? (y/n) " -n 1 -r
+echo #new line
+
+if [ "$REPLY" != "${REPLY#[Yy]}" ] ;then
+	echo "Creating new project $1..."
+else 
+	echo "Cancel creating, aborting."
+	exit 0
+fi
+
+echo "Cloning iOSStartProject git repository..."
+git clone https://github.com/AnthoPakPak/iOSStartProject.git
+
+mv iOSStartProject $1
+cd $1
+
+echo "Renaming..."
+sh RenameProject.sh StartProject $1
+
+rm -f RenameProject.sh
+rm -f README.md
+```
+
+
+### Manuellement :
+
 - Cloner ce repo `git clone https://github.com/AnthoPakPak/iOSStartProject.git`
 - Commenter/Décommenter dans le `Podfile` les librairies nécessaires
 - Lancer `./RenameProject.sh StartProject NewProjectName` pour changer le nom du projet (`ack` et `rename` doivent être installés)
@@ -45,3 +79,5 @@ Ceci est un projet contenant toutes les librairies et la configuration minimale 
 - [M13PDFKit](https://github.com/Marxon13/M13PDFKit) : Un viewer PDF (ajouter également `pod 'TTOpenInAppActivity' , '1.0'` au Podfile car sinon c'est bugué)
 - [ActionSheetPicker](https://github.com/skywinder/ActionSheetPicker-3.0) : Affichage d'un picker view pratique avec handler pour la réponse
 - [PopOverMenu](https://github.com/tichise/PopOverMenu) : Affichage d'un popover avec un table view et un completion handler
+- [iCarousel](https://github.com/nicklockwood/iCarousel) : Caroussel permettant de reproduire différents effets comme CoverFlow
+- [LGSideMenuController](https://github.com/Friend-LGA/LGSideMenuController) : Menu latéral gauche ou droite avec différents effets
