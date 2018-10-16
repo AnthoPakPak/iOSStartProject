@@ -23,6 +23,12 @@
 
 #pragma mark - Alerts
 
++(void) showAlertWithTitle:(NSString*)title message:(NSString*)message buttonText:(NSString*)buttonText {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:buttonText style:UIAlertActionStyleDefault handler:nil]];
+    [Utils showAlertControllerOverEverything:alertController];
+}
+
 +(void) showAlertControllerOverEverything:(UIAlertController*)alertController {
     //to show OVER klcpopup
     dispatch_async(dispatch_get_main_queue(), ^{ //semble nécessaire de show ddans la main queue

@@ -27,7 +27,8 @@
 #import "PhoneAndOsDetection.h"
 
 
-#define ShowAlert(title, myMessage)  { UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:myMessage preferredStyle:UIAlertControllerStyleAlert]; [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]]; [Utils showAlertControllerOverEverything:alertController]; }
+#define ShowAlert(title, myMessage) { [Utils showAlertWithTitle:title message:myMessage buttonText:@"OK"]; }
+#define ShowAlertWithButtonText(title, myMessage, myButtonText) { [Utils showAlertWithTitle:title message:myMessage buttonText:myButtonText]; }
 
 
 

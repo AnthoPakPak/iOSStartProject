@@ -19,7 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor = [UIColor flatRedColor];
-    ShowAlert(@"Yes", @"Success !");
+//    ShowAlert(@"Yes", @"Success !");
+    ShowAlertWithButtonText(@"Yes", @"Success !", @"What a button !");
 }
 
 

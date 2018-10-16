@@ -19,6 +19,7 @@
 		4EB19F4420B557CC00B986CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB19F4320B557CC00B986CC /* Assets.xcassets */; };
 		4EB19F4720B557CC00B986CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB19F4520B557CC00B986CC /* LaunchScreen.storyboard */; };
 		4EB19F4A20B557CC00B986CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB19F4920B557CC00B986CC /* main.m */; };
+		C0E8E07B49527FAB3513CE48 /* Pods_StartProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 712E5ACC76D0322FB70FF849 /* Pods_StartProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		4EB19F4820B557CC00B986CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EB19F4920B557CC00B986CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A7F43DDEF5516D0C28AEFB5 /* Pods_Start_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Start_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		712E5ACC76D0322FB70FF849 /* Pods_StartProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StartProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9C36098D356B5233010B76 /* Pods-StartProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StartProject/Pods-StartProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E8E07B49527FAB3513CE48 /* Pods_StartProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				5A7F43DDEF5516D0C28AEFB5 /* Pods_Start_Project.framework */,
+				712E5ACC76D0322FB70FF849 /* Pods_StartProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,7 +193,6 @@
 				4EB19F3420B557C300B986CC /* Frameworks */,
 				4EB19F3520B557C300B986CC /* Resources */,
 				63C8753ECB3F875E3335F5A0 /* [CP] Embed Pods Frameworks */,
-				F2CABA5E491B497FD9EFC55C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +279,7 @@
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/GHConsole/GHConsole.framework",
+				"${BUILT_PRODUCTS_DIR}/KVConstraintExtensionsMaster/KVConstraintExtensionsMaster.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -285,26 +289,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GHConsole.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVConstraintExtensionsMaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StartProject/Pods-StartProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2CABA5E491B497FD9EFC55C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StartProject/Pods-StartProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
