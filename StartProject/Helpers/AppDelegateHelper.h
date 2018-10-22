@@ -10,6 +10,6 @@
 
 @interface AppDelegateHelper : NSObject
 
-+(void) newVersionCheckerWithForceUpdate:(BOOL)forceUpdate;
++(void) newVersionChecker;
 
 @end

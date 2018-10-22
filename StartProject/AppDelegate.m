@@ -37,7 +37,7 @@
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     
     //New version checker
-//    [AppDelegateHelper newVersionCheckerWithForceUpdate:YES];
+//    [AppDelegateHelper newVersionChecker];
     
     return YES;
 }
