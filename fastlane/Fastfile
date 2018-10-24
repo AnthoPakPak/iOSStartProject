@@ -1,0 +1,121 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+
+targetName = "StartProject"
+
+default_platform(:ios)
+
+platform :ios do
+
+
+	desc "Push a new adhoc build to HockeyApp"
+	lane :beta do
+		#sync_code_signing # use with match for git storage cert
+		cert
+		sigh(adhoc: true, force: true)
+
+		#increment_build_number_in_plist #decomment if update build number needed
+
+		build_app(
+			scheme: targetName,
+		 #	clean: true,
+			export_method: "ad-hoc",
+			# export_options: {
+		 #  		provisioningProfiles: { 
+		 #    		"com.rodeapps.ConseilSante" => "iOS Team Provisioning Profile: com.rodeapps.ConseilSante"
+		 #    	}
+			#}
+		)
+		changelog_from_git_commits # this will generate the changelog based on your last commits
+		hockey(api_token: "4c2b691f8b0f4f058a92f2cf0ae94651", notify: "0") #1 to notify testers
+
+		slack(message: "App successfully released to HockeyApp !", payload: { "Hockey App Download URL" => getFullHockeyAppUrl() }, slack_url: "https://hooks.slack.com/services/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")
+	end
+
+
+	desc "Deploy the app on HockeyApp with Prod status"
+	lane :deployProd do |options|
+		hockeyAppEnterprise(prod: true)
+	end
+
+	desc "Deploy the app on HockeyApp with Staging status"
+	lane :deployStaging do |options|
+		hockeyAppEnterprise(prod: false)
+	end
+
+	#use the same build identifier as the one defined in Appfile
+	desc "Push a new enterprise build to HockeyApp"
+	lane :hockeyAppEnterprise do |options|
+		#sync_code_signing # use with match for git storage cert
+		cert
+		sigh(force: true)
+
+		#increment_build_number_in_plist #decomment if update build number needed
+
+		build_app(
+			scheme: targetName,
+		 #	clean: true,
+			export_method: "enterprise",
+
+			# export_options: {
+		 #  		provisioningProfiles: { 
+		 #    		"com.rodeapps.ConseilSante" => "iOS Team Provisioning Profile: com.rodeapps.ConseilSante"
+		 #    	}
+			#}
+		)
+		changelog_from_git_commits # this will generate the changelog based on your last commits
+		hockey(api_token: "4c2b691f8b0f4f058a92f2cf0ae94651", notify: "0") #1 to notify testers
+
+		environment = (options[:prod] ? "Prod" : "Staging")
+
+		slack(message: "App successfully released to HockeyApp !", payload: {"AppName" => targetName, "Environment" => environment, "Hockey App Download URL" => getFullHockeyAppUrl(), "Certificate" => "Enterprise"}, slack_url: "https://hooks.slack.com/services/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")
+
+		UI.message "Public Download URL (version-specified) : " + getFullHockeyAppUrl()
+	end
+
+
+
+############################# POST ##############################
+
+	# This lane is called, only if the executed lane was successful
+	after_all do |lane|
+
+		#notification(subtitle: "Fastlane", message: "Fastlane finished '#{lane}' successfully") # Mac OS X Notification
+		#slack(message: "Fastlane finished '#{lane}' successfully", slack_url: "https://hooks.slack.com/services/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")
+
+	end
+
+
+  
+ 	error do |lane, exception|
+
+		#notification(subtitle: "Fastlane", message: "Fastlane '#{lane}' errored") # Mac OS X Notification
+		slack(message: "Fastlane '#{lane}' errored", slack_url: "https://hooks.slack.com/services/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")
+
+	end
+
+
+
+############################# METHODS ##############################
+	#Get HockeyApp url with version number
+	def getFullHockeyAppUrl()
+		versionNumber = (lane_context[SharedValues::HOCKEY_BUILD_INFORMATION])['config_url']
+		versionNumber = versionNumber.scan(/\d+/).last
+		fullUrl = lane_context[SharedValues::HOCKEY_DOWNLOAD_LINK] + "/app_versions/" + versionNumber
+		return fullUrl
+	end
+
+end
