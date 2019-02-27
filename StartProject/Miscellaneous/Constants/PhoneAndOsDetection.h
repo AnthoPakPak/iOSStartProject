@@ -26,7 +26,8 @@
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
-
+#define IS_IPHONE_XS_MAX (IS_IPHONE && SCREEN_MAX_LENGTH == 896.0)
+#define IS_IPHONE_X_FORMAT (IS_IPHONE_X || IS_IPHONE_XS_MAX)
 
 //ios detection
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)

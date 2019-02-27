@@ -13,6 +13,7 @@
 +(UIViewController*) topMostController;
 +(void) showAlertControllerOverEverything:(UIAlertController*)alertController;
 +(void) showAlertWithTitle:(NSString*)title message:(NSString*)message buttonText:(NSString*)buttonText;
++(void) showAlertWithTitle:(NSString*)title message:(NSString*)message buttonsText:(NSArray<NSString*>*)buttonsTextArray completionHandler:(void (^)(NSString *clickedButton))completionHandler;
 
 +(id) getDictionaryOrArrayFromJsonFileWithName:(NSString*)fileName;
 

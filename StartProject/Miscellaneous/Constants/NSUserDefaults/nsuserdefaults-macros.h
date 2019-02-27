@@ -17,9 +17,11 @@
 #define defaults_save()                     [defaults() synchronize]
 #define defaults_object(key)                [defaults() objectForKey:key]
 #define defaults_bool(key)                  [defaults() boolForKey:key]
+#define defaults_integer(key)               [defaults() integerForKey:key]
 #define defaults_float(key)                 [defaults() floatForKey:key]
 #define defaults_set_object(key, object)    [defaults() setObject:object forKey:key]; defaults_save(); defaults_post_notification(key)
 #define defaults_set_bool(key, bool)        [defaults() setBool:bool forKey:key]; defaults_save(); defaults_post_notification(key)
+#define defaults_set_integer(key, integer)  [defaults() setInteger:integer forKey:key]; defaults_save(); defaults_post_notification(key)
 #define defaults_set_float(key, bool)       [defaults() setFloat:bool forKey:key]; defaults_save(); defaults_post_notification(key)
 #define defaults_remove(key)                [defaults() removeObjectForKey:key]
 

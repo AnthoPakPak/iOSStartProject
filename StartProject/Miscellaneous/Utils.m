@@ -29,6 +29,20 @@
     [Utils showAlertControllerOverEverything:alertController];
 }
 
++(void) showAlertWithTitle:(NSString*)title message:(NSString*)message buttonsText:(NSArray<NSString*>*)buttonsTextArray completionHandler:(void (^)(NSString *clickedButton))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    for (NSString *buttonText in buttonsTextArray) {
+        [alertController addAction:[UIAlertAction actionWithTitle:buttonText style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if (completionHandler) {
+                completionHandler(action.title);
+            }
+        }]];
+    }
+    
+    [Utils showAlertControllerOverEverything:alertController];
+}
+
 +(void) showAlertControllerOverEverything:(UIAlertController*)alertController {
     //to show OVER klcpopup
     dispatch_async(dispatch_get_main_queue(), ^{ //semble nécessaire de show ddans la main queue
